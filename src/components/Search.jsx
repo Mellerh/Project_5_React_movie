@@ -45,7 +45,7 @@ class Search extends React.Component {
                             onChange={this.saveRequestToState}
                             onKeyDown={this.handleSubmit}
 
-                            placeholder="search"
+                            placeholder="search ( in english, plz ^_^ )"
                         />
                         
                         <a  id='searchbutton'className="waves-effect waves-light btn" onClick={this.handleBtn}
