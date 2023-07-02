@@ -15,3 +15,5 @@ https://mellerh.github.io/Project_5_React_movie/
 
 В качестве базы данных с фильмами используется API - https://www.omdbapi.com/
 API-key хранится в секретной переменной.
+
+Сайт адаптивен.
