@@ -18,6 +18,7 @@ class Search extends React.Component {
     handleSubmit = (event) => {
         if (event.key === 'Enter' && this.state.search.trim()) {
             this.props.searchFilms(this.state.search.trim());
+            
         }
     }
 
