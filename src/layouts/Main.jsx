@@ -31,9 +31,10 @@ class Main extends React.Component {
 
     // метод для получения списка фильмов с сервера при первой загрузке страницы
     getFilms() {
-        fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=blade`)
+        fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=blade`)
             .then(response => response.json())
             .then(data => this.setState({moviesList: data.Search}))
+            .catch(err => console.log(err))
             // ответ с сервера нам приходит как объект в объекта. поэтому сохраняем именно внутренний объект Search в state
 
         this.setState({newReqest: 'blade'})
@@ -42,10 +43,10 @@ class Main extends React.Component {
 
     // стрелочная функция вызывается в компоненте Search при поиске нового фильма
     newFilmsRequest = (newReqest) => {
-        fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${newReqest}&type=${this.state.radioBtn}`)
+        fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${newReqest}&type=${this.state.radioBtn}`)
             .then(response => response.json())
             .then(data => this.setState({moviesList: data.Search}))
-            // .then(data => console.log(data))
+            .catch(err => console.log(err))
 
         this.setState({newReqest: newReqest})
         }
