@@ -4,7 +4,7 @@ import '../helpers/NotFound.css'
 function NotFound() {
     return(
         <div style={{height: '60vh'}}>
-            <h2 style={{marginBottom: '2rem'}}>Not found @-@</h2>
+            <h3 style={{marginBottom: '2rem'}}>Not found @-@</h3>
             <div data-js="astro" className="astronaut" style={{left: 'calc(50% - 125px)'}}>
                 <div className="head"></div>
                 <div className="arm arm-left"></div>

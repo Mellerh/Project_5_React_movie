@@ -129,7 +129,7 @@
     height: 300px;
     position: absolute;
     z-index: 11;
-    top: calc(50% - 70px);
+    top: calc(50% - 20px);
     left: calc(50% - 125px);
     animation: astronaut 5s linear infinite;
   }
