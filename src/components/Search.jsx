@@ -49,7 +49,7 @@ class Search extends React.Component {
                         />
                         
                         <a  id='searchbutton'className="waves-effect waves-light btn" onClick={this.handleBtn}
-                        >button</a>
+                        >search</a>
 
                         </div>
                     </div>
