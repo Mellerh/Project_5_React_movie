@@ -11,3 +11,74 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* задаём падинги для хедера. указываем максимальную высоту, чтобы при уменьшении экрана, хедер не давил на футер */
+nav {
+  padding: 0 1rem;
+  /* max-height: 50px; */
+}
+
+
+/* задаём высоту для main-секции. 65px и 50px - это высота хедера и футера */
+main {
+  min-height: calc(100vh - 64px - 50px);
+}
+
+/* убираем паддинги для футера */
+.page-footer {
+  padding: 0px;
+}
+
+
+/* создаём грид-сетку для корректного отображения блоков с фильмами в ряд */
+.movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+/* центрирую прелоадер посередине страницы */
+.preloader {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* стилизуем кнопку поиска */
+#searchbutton {
+  position: absolute;
+  top: 0;
+  right: 0.7rem;
+}
+
+
+/* стилизуем радио-кнопки */
+.radioBtns {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+/* устанавливаем media. если ширина экрана выше 1000px 
+  /* стилизуем высоту постера, чтобы уровнять все постеры на подин уровень */
+  @media (min-width: 600px) {
+    .imgsize {
+      height: 440px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
