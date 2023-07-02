@@ -17,7 +17,7 @@ class Search extends React.Component {
     // обрабатываем нажатие на Enter и отправляем данные из стэйта в Main для отрисовки фильмов
     handleSubmit = (event) => {
         if (event.key === 'Enter' && this.state.search.trim()) {
-            this.props.searchFilms(this.state.search);
+            this.props.searchFilms(this.state.search.trim());
         }
     }
 
@@ -25,7 +25,7 @@ class Search extends React.Component {
     // обрабатываем нажатие на кнопку и отправляем данные в Main для отрисовки фильмов
     handleBtn = () => {
         if(this.state.search.trim()) {
-            this.props.searchFilms(this.state.search);
+            this.props.searchFilms(this.state.search.trim());
         }
     }
     
