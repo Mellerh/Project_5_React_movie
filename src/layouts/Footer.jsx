@@ -5,8 +5,7 @@ function Footer() {
             <div className="container ">
                 
             {/* добавляем актуальный год */}
-            © {new Date().getFullYear()} React Movie
-            <a className="grey-text text-lighten-4 right" href="#!">More Links</a>
+            © {new Date().getFullYear()} React Movies
             </div>
           </div>
         </footer>
