@@ -6,6 +6,7 @@ function Footer() {
                 
             {/* добавляем актуальный год */}
             © {new Date().getFullYear()} React Movies
+            <span className="right">{new Date().toLocaleString()}</span>
             </div>
           </div>
         </footer>
